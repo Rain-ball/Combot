@@ -60,8 +60,6 @@ with sr.Microphone() as source:
                 os.startfile("onenote.exe")
             if r1.recognize_google(audio) == "open Microsoft paint":
                 os.startfile("mspaint.exe")
-            if r1.recognize_google(audio) == "open code editor":
-                os.startfile("notepad++.exe")
             if r1.recognize_google(audio) == "translate to Japanese":
                 translator = Translator(to_lang = "Japanese")
                 speak("Translate phrase please")
