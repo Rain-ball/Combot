@@ -152,7 +152,7 @@ with sr.Microphone() as source:
                 print("Successfully changed rate!")
             if r1.recognize_google(audio) == "change your voice":
                 print("Enter voice number.")
-                speak("Enter voice number. 1 for male, 2 for female and 3 for Japanese")
+                speak("Enter voice number. 1 for male, and 2 for female. If you have a 3rd voice please enter 3.")
                 vnumber = int(input())
                 if (vnumber > 0) and (vnumber < 4):
                     vnumber = vnumber - 1
