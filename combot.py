@@ -144,7 +144,7 @@ with sr.Microphone() as source:
                     audio = r1.listen(source)
                     speak = r1.recognize_google(source)
                     if "yes" in speak:
-                        csx == 0
+                        csx = 0
                     elif "no" in speak:
                         continue
                     else:
